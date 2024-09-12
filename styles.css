@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #151515 ;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #352F44;
+}
+
+.body{
+    margin-left: 0px;
+}
+
+
+/*  */
+.img{
+   width:1536px;
+   height: 400px;
+   opacity: 32%;
+}
+
+
+/*  */
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 120px;
+  }
+
+.header{
+    margin-top: 40px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+}
+
+.kasi{
+    color: #FF204E;
+}
+
+.ram{
+    color: #FCFCFC;
+}
+
+/*  */
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+  }
+
+p{
+   font-size: 20px;
+ }
+
+.about{
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+
+
+/*  */
+.line{
+    background-color: #000000;
+    border-radius: 10px 100px 100px 10px;
+    margin-left: 0.36%;
+    margin-top: 8px;
+    height: 10px;
+    width: 96%;
+}
+
+
+/*  */
+.skillsborder{
+    background-color: #000000;
+    border-radius: 10px 100px 100px 10px;
+    margin-left: 0.36%;
+    /* padding: 5px; */
+    width: 99%;
+    margin-top: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills{
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    margin: 10px;
+    margin-left: 50px;
+
+    position: relative;
+    color: #352F44;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    cursor: pointer;
+    font-weight: 900;
+    text-transform: var(--fill);
+    transition: all 0.4s ease-in;
+
+    padding: 6px;
+       
+
+    --percentage: 0;
+    --fill:red;
+
+    &::after{
+        content: '';
+        position: absolute;
+        box-sizing: border-box;
+
+        top: 0;
+        left: 10;
+        width: 200px;
+        height: 200px;
+
+        /* padding: 20px; */
+
+        border: 40px solid;
+        border-color:#151515 #151515 var(--fill) var(--fill);
+        /* transform: rotate(-45deg); */
+        border-radius: 50%;
+        transform: rotate(calc(1deg*(-45 + var(--percentage)*1.8)));
+
+        animation: fillAnimation 2s ease-out;
+    }
+}
+
+.skills:hover{
+    border: 1.2px solid var(--fill);
+    box-shadow: 0 0 3px 0 var(--fill);
+    color: var(--fill);
+    padding: 10px;
+    transform: var(--fill) ease-in;
+}
+
+@keyframes fillAnimation{
+    0%{transform: rotate(-45deg)}
+    50%{transform: rotate(135deg)}
+}
+
+
+/* Download CV */
+.btn{
+ 
+}
+
+.pdf-download{
+
+}
